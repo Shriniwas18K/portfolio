@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
-    "name": "my-portfolio",
-    "homepage": "https://sharqawycs.github.io/my-portfolio/",
-=======
     "name": "portfolio",
     "homepage": "https://sharqawycs.github.io/portfolio/",
->>>>>>> 0e38046 (done)
     "private": true,
     "version": "0.0.0",
     "type": "module",
