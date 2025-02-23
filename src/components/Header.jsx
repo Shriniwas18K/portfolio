@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 
 export const Header = ({ darkMode, setDarkMode }) => {
     const headerItems = ['Home', 'About', 'Projects', 'Contact'];
+
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50); // Show glass effect after 50px scroll
+            setIsScrolled(window.scrollY > 100); // Show glass effect after 50px scroll
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -31,9 +32,9 @@ export const Header = ({ darkMode, setDarkMode }) => {
             {/* Dark Mode Toggle Button */}
             <button
                 onClick={() => setDarkMode(!darkMode)}
-                className="ml-4 px-3 py-1 border rounded-full text-sm transition 
-                           bg-gray-200 text-black dark:bg-gray-700 dark:text-white">
-                {darkMode ? 'Dark Mode' : 'Light Mode'}
+                className="ml-1 px-2 py-1 border rounded-full text-sm transition 
+                           ">
+                {darkMode ? '🌙' : '☀️'}
             </button>
         </div>
     );
