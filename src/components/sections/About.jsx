@@ -1,6 +1,6 @@
 import { RevealOnScroll } from '../RevealOnScroll';
 
-export const About = ({ darkMode }) => {
+export const About = () => {
     const frontendSkills = [
         'HTML',
         'CSS',

@@ -5,6 +5,7 @@ import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
 import { Contact } from './components/sections/Contact';
+import { Footer } from './components/sections/Footer';
 import { useState, useEffect } from 'react';
 
 /**
@@ -47,10 +48,11 @@ function App() {
     return (
         <div className="min-h-screen">
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-            <Home darkMode={darkMode} />
-            <About darkMode={darkMode} />
-            <Projects darkMode={darkMode} />
-            <Contact darkMode={darkMode} />
+            <Home />
+            <About />
+            <Projects />
+            <Contact />
+            <Footer />
         </div>
     );
 }

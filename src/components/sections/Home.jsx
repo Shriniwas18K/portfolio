@@ -14,11 +14,10 @@ export const Home = () => {
                         </span>
                     </h1>
                     <p className="text-[#999999] text-lg mb-8 max-w-lg mx-auto">
-                        this is Sharawy and i am a full stack developer and i am
-                        working in this field for 5 years and i am very happy to
-                        work in this field and i am very happy to work in this
-                        filed , these knid words are written by Eng . Nagy Ahmed
-                        who is CEO of Innovation start-up for SW soluations .
+                        Software engineer passionate about system design,
+                        backend development, and problem-solving. I love
+                        building scalable and efficient solutions while
+                        continuously learning and exploring new technologies.
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a>

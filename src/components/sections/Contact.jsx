@@ -1,7 +1,26 @@
 import { RevealOnScroll } from '../RevealOnScroll';
+import {
+    FaGithub,
+    FaLinkedin,
+    FaTwitter,
+    FaEnvelope,
+    FaDiscord,
+    FaYoutube,
+} from 'react-icons/fa';
 
 export const Contact = () => {
-    const email = 'sharqawycs@example.com';
+    const email = 'sharqawycs@gmail.com';
+    const username = 'sharqawycs';
+
+    // Social Links
+    const socialLinks = [
+        { icon: FaEnvelope, url: `mailto:${email}` },
+        { icon: FaGithub, url: `https://github.com/${username}` },
+        { icon: FaDiscord, url: `https://discord.com/users/${username}` },
+        { icon: FaLinkedin, url: `https://linkedin.com/in/${username}` },
+        { icon: FaYoutube, url: `https://www.youtube.com/@${username}` },
+        { icon: FaTwitter, url: `https://x.com/${username}` },
+    ];
 
     // Quick message templates for email
     const quickMessages = [
@@ -42,51 +61,36 @@ export const Contact = () => {
             <section
                 id="contact"
                 className="min-h-screen flex items-center justify-center py-20">
-                <div className="max-w-4xl  px-4 ">
+                <div className="max-w-4xl px-4">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#3399FF] to-[#0077CC] bg-clip-text text-transparent text-center">
-                        {' '}
                         Get In Touch
                     </h2>
 
-                    <div className="flex justify-center gap-8 text-3xl mb-6 rounded-xl p-8 border-[#999999]/50 border hover:-translate-y-1 transition-all">
-                        <a
-                            href="https://github.com/your-username"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-700 dark:text-white hover:text-[#0077CC] transition">
-                            {/* <FaGithub /> */}
-                        </a>
-                        <a
-                            href="https://linkedin.com/in/your-username"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:text-[#0077CC] transition">
-                            {/* <FaLinkedin /> */}
-                        </a>
-                        <a
-                            href="https://twitter.com/your-username"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-[#0077CC] transition">
-                            {/* <FaTwitter /> */}
-                        </a>
-                        <a
-                            href={`mailto:${email}`}
-                            className="text-red-500 hover:text-[#0077CC] transition">
-                            {/* <FaEnvelope /> */}
-                        </a>
+                    {/* Social Links */}
+                    <div className="flex justify-center gap-6 text-3xl mb-6 rounded-xl p-8 border-[#999999]/50 border hover:-translate-y-1 transition-all">
+                        {socialLinks.map(({ icon: Icon, url }, index) => (
+                            <a
+                                key={index}
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className=" hover:text-[#0077CC] transition">
+                                <Icon />
+                            </a>
+                        ))}
                     </div>
+
                     {/* Quick Messages */}
                     <div className="flex flex-wrap justify-center gap-4 rounded-xl p-8 border-[#999999]/50 border hover:-translate-y-1 transition-all">
                         {quickMessages.map((msg, index) => (
-                            <button
+                            <a
                                 key={index}
                                 href={`mailto:${email}?subject=${encodeURIComponent(msg.subject)}&body=${encodeURIComponent(msg.body)}`}
                                 className="bg-[#0077CC] text-[#EEEEEE] px-6 py-3 rounded-full 
-                                            font-medium transition relative overflow-hidden
-                                            hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC]">
+                                           font-medium transition relative overflow-hidden
+                                           hover:-translate-y-0.5 hover:shadow-[0_0_15px_#0077CC]">
                                 {msg.text}
-                            </button>
+                            </a>
                         ))}
                     </div>
                 </div>
