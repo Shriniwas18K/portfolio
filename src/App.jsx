@@ -47,12 +47,12 @@ function App() {
 
     return (
         <div className="min-h-screen">
-            <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Header />
             <Home />
             <About />
             <Projects />
             <Contact />
-            <Footer />
+            <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
     );
 }

@@ -24,7 +24,7 @@ export const Home = () => {
                             <button
                                 href="#projects"
                                 className="bg-[#0077CC] text-[#EEEEEE] px-6 py-3 rounded-full font-medium transition relative overflow-hidden
-                              hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC]">
+                              hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] cursor-pointer">
                                 View Projects
                             </button>
                         </a>
@@ -32,7 +32,7 @@ export const Home = () => {
                             <button
                                 href="#contact"
                                 className="border border-[#0077CC]/50 text-[#0077CC] px-6 py-3 rounded-full font-medium transition-all duration-200 relative overflow-hidden 
-                              hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] hover:bg-[0_0_15px_#0077CC]">
+                              hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] hover:bg-[0_0_15px_#0077CC] cursor-pointer">
                                 Contact Me
                             </button>
                         </a>

@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 
-export const Header = ({ darkMode, setDarkMode }) => {
+export const Header = () => {
     const headerItems = ['Home', 'About', 'Projects', 'Contact'];
-
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -24,18 +23,10 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 <a
                     href={`#${item.toLowerCase()}`}
                     key={item}
-                    className="hover:text-gray-300 dark:hover:text-gray-400 transition">
+                    className="hover:text-[#0077CC] transition">
                     {item}
                 </a>
             ))}
-
-            {/* Dark Mode Toggle Button */}
-            <button
-                onClick={() => setDarkMode(!darkMode)}
-                className="ml-1 px-2 py-1 border rounded-full text-sm transition 
-                           ">
-                {darkMode ? '🌙' : '☀️'}
-            </button>
         </div>
     );
 };
