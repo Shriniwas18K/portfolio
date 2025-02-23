@@ -20,21 +20,17 @@ export const Home = () => {
                         continuously learning and exploring new technologies.
                     </p>
                     <div className="flex justify-center space-x-4">
-                        <a>
-                            <button
-                                href="#projects"
-                                className="bg-[#0077CC] text-[#EEEEEE] px-6 py-3 rounded-full font-medium transition relative overflow-hidden
+                        <a
+                            href="#projects"
+                            className="bg-[#0077CC] text-[#EEEEEE] px-6 py-3 rounded-full font-medium transition relative overflow-hidden
                               hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] cursor-pointer">
-                                View Projects
-                            </button>
+                            View Projects
                         </a>
-                        <a>
-                            <button
-                                href="#contact"
-                                className="border border-[#0077CC]/50 text-[#0077CC] px-6 py-3 rounded-full font-medium transition-all duration-200 relative overflow-hidden 
+                        <a
+                            href="#contact"
+                            className="border border-[#0077CC]/50 text-[#0077CC] px-6 py-3 rounded-full font-medium transition-all duration-200 relative overflow-hidden 
                               hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] hover:bg-[0_0_15px_#0077CC] cursor-pointer">
-                                Contact Me
-                            </button>
+                            Contact Me
                         </a>
                     </div>
                 </div>
