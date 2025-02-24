@@ -1,66 +1,7 @@
 import { RevealOnScroll } from '../RevealOnScroll';
+import { aboutData } from '../../data/aboutData.js';
 
 export const About = () => {
-    // All data is now in a flexible structure
-    const aboutMe = {
-        description:
-            'I am a software engineer with a passion for web development and design. I am a self-taught programmer who enjoys learning new technologies and creating beautiful and functional websites.',
-        skills: [
-            {
-                category: 'Frontend',
-                technologies: [
-                    'HTML',
-                    'CSS',
-                    'JavaScript',
-                    'React',
-                    'Tailwind CSS',
-                ],
-            },
-            {
-                category: 'Backend',
-                technologies: [
-                    'Node.js',
-                    'Express',
-                    'MongoDB',
-                    'Firebase',
-                    'AWS',
-                ],
-            },
-            {
-                category: 'DevOps',
-                technologies: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Linux'],
-            },
-            {
-                category: 'AI/ML',
-                technologies: [
-                    'Python',
-                    'TensorFlow',
-                    'PyTorch',
-                    'Scikit-learn',
-                ],
-            },
-        ],
-        education: {
-            degree: 'BSc in Computer Engineering',
-            university: 'Ain Shams University',
-            years: '2023-2027',
-        },
-        workExperience: [
-            {
-                position: 'Software Engineer',
-                company: 'EGY Tech',
-                description:
-                    'Worked on developing and maintaining full-stack web applications, focusing on backend optimization and scalable architectures.',
-            },
-            {
-                position: 'Intern',
-                company: 'XYZ Solutions',
-                description:
-                    'Gained experience in building cloud-based applications and working with microservices.',
-            },
-        ],
-    };
-
     return (
         <RevealOnScroll>
             <section
@@ -73,13 +14,13 @@ export const About = () => {
 
                     {/* About Me Description */}
                     <div className="rounded-xl p-8 border-[#999999]/50 border hover:-translate-y-1 transition-all">
-                        <p className="text-gray-400 mb-6">
-                            {aboutMe.description}
+                        <p className="text-[#999999] mb-6">
+                            {aboutData.description}
                         </p>
 
                         {/* Skills (Fully Dynamic) */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {aboutMe.skills.map((skillCategory, index) => (
+                            {aboutData.skills.map((skillCategory, index) => (
                                 <div
                                     key={index}
                                     className="rounded-xl p-6 hover:-translate-y-1 transition-all">
@@ -109,15 +50,18 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4">
                                 🏫 Education
                             </h3>
-                            <ul className="text-gray-400">
-                                <li className="text-gray-400 mb-2">
-                                    <strong>{aboutMe.education.degree}</strong>
-                                </li>
-                                <li className="text-gray-400">
-                                    {aboutMe.education.university} (
-                                    {aboutMe.education.years})
-                                </li>
-                            </ul>
+
+                            {aboutData.education.map((education, index) => (
+                                <ul key={index} className="text-[#999999] mb-5">
+                                    <li className="mb-1">
+                                        <strong>{education.degree}</strong>
+                                    </li>
+                                    <li>
+                                        {education.university} (
+                                        {education.years})
+                                    </li>
+                                </ul>
+                            ))}
                         </div>
 
                         {/* Work Experience */}
@@ -125,8 +69,8 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4">
                                 💼 Work Experience
                             </h3>
-                            <div className="space-y-4 text-gray-400">
-                                {aboutMe.workExperience.map((job, index) => (
+                            <div className="space-y-4 text-[#999999]">
+                                {aboutData.workExperience.map((job, index) => (
                                     <div key={index}>
                                         <h4 className="font-semibold">
                                             {job.position} @ {job.company}
