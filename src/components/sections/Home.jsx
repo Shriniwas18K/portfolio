@@ -22,8 +22,8 @@ export const Home = () => {
                     <div className="flex justify-center space-x-4">
                         <a
                             href="#projects"
-                            className="bg-[#0077CC] text-[#EEEEEE] px-6 py-3 rounded-full font-medium transition relative overflow-hidden
-                              hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] cursor-pointer">
+                            className="bg-gradient-to-r from-[#3399FF] to-[#0077CC] text-[#EEEEEE] px-6 py-3 rounded-full font-medium transition relative overflow-hidden
+                                    hover:-translate-y-0.2 hover:shadow-[0_0_15px_#0077CC] cursor-pointer">
                             View Projects
                         </a>
                         <a

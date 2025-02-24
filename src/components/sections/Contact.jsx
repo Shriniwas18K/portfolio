@@ -83,12 +83,24 @@ export const Contact = () => {
                     {/* Quick Messages */}
                     <div className="flex flex-wrap justify-center gap-3 sm:gap-4 rounded-xl p-6 sm:p-8 border-[#999999]/50 border hover:-translate-y-1 transition-all">
                         {quickMessages.map((msg, index) => (
+                            // OLD AMAZING BTN
+                            // <a
+                            //     key={index}
+                            //     href={`mailto:${email}?subject=${encodeURIComponent(msg.subject)}&body=${encodeURIComponent(msg.body)}`}
+                            //     className="w-full sm:w-auto text-transparent bg-clip-text bg-gradient-to-r from-[#3399FF] to-[#0077CC]
+                            //            border border-[#0077CC] text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-full
+                            //            font-medium transition relative overflow-hidden
+                            //            hover:-translate-y-0.5 hover:shadow-[0_0_10px_#0077CC]">
+                            //     {msg.text}
+                            // </a>
+
                             <a
                                 key={index}
                                 href={`mailto:${email}?subject=${encodeURIComponent(msg.subject)}&body=${encodeURIComponent(msg.body)}`}
-                                className="bg-[#0077CC] text-white text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-full 
-                               font-medium transition relative overflow-hidden
-                               hover:-translate-y-0.5 hover:shadow-[0_0_10px_#0077CC]">
+                                className="w-full sm:w-auto text-[#EEEEEE] bg-gradient-to-r from-[#3399FF] to-[#0077CC] 
+                                            text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 rounded-full 
+                                            font-medium transition relative overflow-hidden border-0
+                                            hover:-translate-y-0.5 hover:shadow-[0_0_10px_#0077CC]">
                                 {msg.text}
                             </a>
                         ))}

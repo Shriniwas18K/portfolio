@@ -6,7 +6,7 @@ export const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 100); // Show glass effect after 50px scroll
+            setIsScrolled(window.scrollY > 120); // Show glass effect after 50px scroll
         };
 
         window.addEventListener('scroll', handleScroll);
