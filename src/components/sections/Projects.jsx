@@ -1,24 +1,8 @@
 import { RevealOnScroll } from '../RevealOnScroll';
+import { projectsData } from '../../data/projectsData';
 
 export const Projects = () => {
     // Project Data
-    const projects = [
-        {
-            title: 'AI Analytics Dashboard',
-            description:
-                'ML-powered data visualization platform with predictive analytics and interactive reports.',
-            skills: ['Python', 'TensorFlow', 'D3.js', 'Flask'],
-            link: 'https://example.com/ai-dashboard',
-        },
-        {
-            title: 'E-Commerce Website',
-            description:
-                'Full-stack e-commerce platform with real-time payment integration and product management.',
-            skills: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-            link: 'https://example.com/ecommerce',
-        },
-    ];
-
     return (
         <section
             id="projects"
@@ -29,7 +13,7 @@ export const Projects = () => {
                         Featured Projects
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {projects.map((project, index) => (
+                        {projectsData.map((project, index) => (
                             <div
                                 key={index}
                                 className="glass p-6 rounded-xl border border-[#999999]/50 
