@@ -14,10 +14,10 @@ export const Home = () => {
                         </span>
                     </h1>
                     <p className="text-[#999999] text-lg mb-8 max-w-lg mx-auto">
-                        Software engineer passionate about system design,
-                        backend development, and problem-solving. I love
-                        building scalable and efficient solutions while
-                        continuously learning and exploring new technologies.
+                        A passionate and results-driven Computer Engineering
+                        student with an interest in software design and backend
+                        development. Always eager to tackle new challenges,
+                        learn, and create impactful solutions.
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a

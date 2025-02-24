@@ -1,61 +1,7 @@
 import { RevealOnScroll } from '../RevealOnScroll';
-import {
-    FaGithub,
-    FaLinkedin,
-    FaTwitter,
-    FaEnvelope,
-    FaDiscord,
-    FaYoutube,
-} from 'react-icons/fa';
+import { email, socialLinks, quickMessages } from '../../data/contactData';
 
 export const Contact = () => {
-    const email = 'sharqawycs@gmail.com';
-    const username = 'sharqawycs';
-
-    // Social Links
-    const socialLinks = [
-        { icon: FaEnvelope, url: `mailto:${email}` },
-        { icon: FaGithub, url: `https://github.com/${username}` },
-        { icon: FaDiscord, url: `https://discord.com/users/${username}` },
-        { icon: FaLinkedin, url: `https://linkedin.com/in/${username}` },
-        { icon: FaYoutube, url: `https://www.youtube.com/@${username}` },
-        { icon: FaTwitter, url: `https://x.com/${username}` },
-    ];
-
-    // Quick message templates for email
-    const quickMessages = [
-        {
-            text: 'Interested in collaborating!',
-            subject: 'Collaboration Inquiry',
-            body: "Hi, I came across your portfolio and would love to collaborate on a project. Let's discuss further!",
-        },
-        {
-            text: 'Need help with a project',
-            subject: 'Project Assistance',
-            body: "Hello, I'm currently working on a project and would love your input. Can we connect?",
-        },
-        {
-            text: 'Just wanted to say hello!',
-            subject: 'Hello!',
-            body: 'Hey there! I found your work really inspiring and just wanted to say hi.',
-        },
-        {
-            text: 'Freelance Work Inquiry',
-            subject: 'Freelance Opportunity',
-            body: "Hi, I'm looking for a developer to help with a project. Are you available for freelance work?",
-        },
-        {
-            text: 'Join our team!',
-            subject: 'Job Opportunity',
-            body: "Hello, we're interested in hiring a developer with your skill set. Let's discuss this opportunity!",
-        },
-        {
-            text: 'Can you mentor me?',
-            subject: 'Mentorship Request',
-            body: "Hey, I'm an aspiring developer and would love to learn from you. Would you be open to mentoring me?",
-        },
-    ];
-
     return (
         <RevealOnScroll>
             <section
