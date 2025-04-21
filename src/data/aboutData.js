@@ -7,27 +7,15 @@ export const aboutData = {
     skills: [
         {
             category: 'Languages',
-            technologies: ['C/C++', 'Java', 'JavaScript', 'Python', 'C#'],
-        },
-        {
-            category: 'Frontend',
-            technologies: [
-                'HTML',
-                'CSS',
-                'JavaScript',
-                'ReactJS',
-                'Tailwind CSS',
-            ],
+            technologies: ['C/C++', 'Java', 'Python'],
         },
         {
             category: 'Backend',
             technologies: [
-                'Node.js',
-                'ExpressJS',
-                'MySQL',
-                'MongoDB',
-                'RESTs APIs',
-                'JWT',
+                'Core Java',
+                'Adv. Java',
+                'Spring Boot',
+                'SQL/PLSQL'
             ],
         },
         {
@@ -37,28 +25,33 @@ export const aboutData = {
     ],
     education: [
         {
-            degree: 'BSc in Computer Engineering',
-            university: 'Ain Shams University',
-            years: '2023-2027',
+            degree: 'BTech in Computer Science and Engineering (AIML)',
+            university: 'Pimpri Chinchwad College Of Engineering',
+            years: '2022-2026',
         },
         {
-            degree: 'BSc in Computer Science',
-            university: 'University of East London',
-            years: '2023-2027',
+            degree: 'HSC',
+            university: 'Podar International School Chinchwad CBSE',
+            years: '2020-2022',
         },
+        {
+            degree: 'SSC',
+            university: 'Saraswati Vishwa Vidyalaya National School CBSE',
+            years: '2015-2020',
+        }
     ],
     workExperience: [
-        {
-            position: 'Software Engineer',
-            company: 'Self-employed',
-            description:
-                'Responsible for designing and implementing a wide range of software projects, both backend and full-stack apps.',
-        },
-        {
-            position: 'Apprenticeship',
-            company: 'Coach Academy',
-            description:
-                'Completed competitive programming training with exceptional performance.',
-        },
+        // {
+        //     position: 'Software Engineer',
+        //     company: 'Self-employed',
+        //     description:
+        //         'Responsible for designing and implementing a wide range of software projects, both backend and full-stack apps.',
+        // },
+        // {
+        //     position: 'Apprenticeship',
+        //     company: 'Coach Academy',
+        //     description:
+        //         'Completed competitive programming training with exceptional performance.',
+        // },
     ],
 };
