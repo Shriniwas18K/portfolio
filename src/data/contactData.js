@@ -7,17 +7,17 @@ import {
     FaYoutube,
 } from 'react-icons/fa';
 
-export const email = 'sharqawycs@gmail.com';
-const username = 'sharqawycs';
+export const email = 'kshriniwas180205@gmail.com';
+const username = 'kshriniwas';
 
 // Social Links
 export const socialLinks = [
     { icon: FaEnvelope, url: `mailto:${email}` },
-    { icon: FaGithub, url: `https://github.com/${username}` },
-    { icon: FaDiscord, url: `https://discord.com/users/${username}` },
-    { icon: FaLinkedin, url: `https://linkedin.com/in/${username}` },
-    { icon: FaYoutube, url: `https://www.youtube.com/@${username}` },
-    { icon: FaTwitter, url: `https://x.com/${username}` },
+    { icon: FaGithub, url: `https://github.com/Shriniwas18K` },
+    // { icon: FaDiscord, url: `https://discord.com/users/${username}` },
+    { icon: FaLinkedin, url: `https://linkedin.com/in/shriniwas-kulkarni-8aa180330/` },
+    // { icon: FaYoutube, url: `https://www.youtube.com/@${username}` },
+    // { icon: FaTwitter, url: `https://x.com/${username}` },
 ];
 
 // Quick message templates for email
