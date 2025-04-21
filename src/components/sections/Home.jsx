@@ -10,7 +10,7 @@ export const Home = () => {
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-right">
                         Hi, I am{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3399FF] to-[#0077CC]">
-                            Sharqawy
+                            Shriniwas
                         </span>
                     </h1>
                     <p className="text-[#999999] text-lg mb-8 max-w-lg mx-auto">
